@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\GSE;
+use App\Companies;
 
 class CompaniesController extends Controller
 {
@@ -16,6 +16,7 @@ class CompaniesController extends Controller
     {
         //
         $companies = Companies::orderBy('id','DESC')->paginate(3);
+        //dd($companies);
         return view('Companies.index', compact('companies'));
     }
 

@@ -21,12 +21,12 @@
                <th>Eliminar</th>
              </thead>
              <tbody>
-              @if($libros->count())  
-              @foreach($libros as $libro)  
+              @if($companies->count())  
+              @foreach($companies as $company)  
               <tr>
-                <td>{{$libro->name}}</td>
-                <td>{{$libro->city}}</td>
-                <td>{{$libro->pc}}</td>
+                <td>{{$company->name}}</td>
+                <td>{{$company->city}}</td>
+                <td>{{$company->pc}}</td>
                 <td><a class="btn btn-primary btn-xs" href="{{action('CompaniesController@edit', $company->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
                 <td>
                   <form action="{{action('CompaniesController@destroy', $company->id)}}" method="post">
@@ -47,7 +47,7 @@
           </table>
         </div>
       </div>
-      {{ $libros->links() }}
+      {{ $companies->links() }}
     </div>
   </div>
 </section>
