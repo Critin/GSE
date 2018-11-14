@@ -68,7 +68,7 @@ class CompaniesController extends Controller
     public function edit($id)
     {
         //
-        $company = Companies::find($id);
+        $companies = Companies::find($id);
         return view('companies.edit', compact('companies'));
     }
 
