@@ -24,3 +24,9 @@ Route::get('/companies', 'CompaniesController@index');
 Route::resource('companies', 'CompaniesController');
 Route::get('/companies/{companies}', 'CompaniesController@show');
 Route::post('/companies/{companies}', 'CompaniesController@store');
+
+# Estudiantes
+Route::get('/students', 'StudentsController@index');
+Route::resource('students', 'StudentsController');
+Route::get('/students/{students}', 'StudentsController@show');
+Route::post('/students/{students}', 'StudentsController@store');

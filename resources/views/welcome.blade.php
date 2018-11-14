@@ -85,7 +85,7 @@
                 <div class="links">
                     <a href="/GSE/companies">Empresas</a>
                     <a href="https://laracasts.com">Ciclos de grados formativos</a>
-                    <a href="https://laravel-news.com">Alumnos</a>
+                    <a href="/GSE/students">Alumnos</a>
                     <a href="https://laravel-news.com">Solicitudes</a>
                     <a href="https://laravel-news.com">Listados</a>
                 </div>
