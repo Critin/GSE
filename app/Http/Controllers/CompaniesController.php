@@ -85,7 +85,7 @@ class CompaniesController extends Controller
         $this->validate($request,['name'=>'required', 'city'=>'required', 'pc'=>'required']);
         
         Companies::find($id)->update($request->all());
-        return redirect()->route('compaies.index')->with('success', '¡Compañía actualizada correctamente!');
+        return redirect()->route('companies.index')->with('success', '¡Compañía actualizada correctamente!');
     }
 
     /**
