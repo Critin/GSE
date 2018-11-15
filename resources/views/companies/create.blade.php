@@ -43,7 +43,7 @@
 							<div class="row">
 								<div class="col-xs-6 col-sm-6 col-md-6">
 									<div class="form-group">
-										<input type="text" name="pc" id="pc" class="form-control input-sm" placeholder="Código postal">
+										<input type="integer" name="pc" id="pc" class="form-control input-sm" placeholder="Código postal">
 									</div>
 								</div>
 							</div>
