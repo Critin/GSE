@@ -30,3 +30,9 @@ Route::get('/students', 'StudentsController@index');
 Route::resource('students', 'StudentsController');
 Route::get('/students/{students}', 'StudentsController@show');
 Route::post('/students/{students}', 'StudentsController@store');
+
+#Grados
+Route::get('/grades', 'GradesController@index');
+Route::resource('grades', 'GradesController');
+Route::get('/grades/{grades}', 'GradesController@show');
+Route::post('/grades/{grades}', 'GradesController@store');
