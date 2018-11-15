@@ -27,13 +27,13 @@
                 <td>{{$student->name}}</td>
                 <td>{{$student->lastname}}</td>
                 <td>{{$student->age}}</td>
-                <td><a class="btn btn-primary btn-xs" href="{{action('StudentsController@edit', $student->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
+                <td><a class="btn btn-primary btn-xs" href="{{action('StudentsController@edit', $student->id)}}" >Editar</a></td>
                 <td>
                   <form action="{{action('StudentsController@destroy', $student->id)}}" method="post">
                    {{csrf_field()}}
                    <input name="_method" type="hidden" value="DELETE">
  
-                   <button class="btn btn-danger btn-xs" type="submit"><span class="glyphicon glyphicon-trash"></span></button>
+                   <button class="btn btn-danger btn-xs" type="submit">ELIMINAR</button>
                 </td>
                </tr>
                @endforeach 

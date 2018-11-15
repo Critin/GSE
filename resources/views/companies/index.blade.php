@@ -27,13 +27,13 @@
                 <td>{{$company->name}}</td>
                 <td>{{$company->city}}</td>
                 <td>{{$company->pc}}</td>
-                <td><a class="btn btn-primary btn-xs" href="{{action('CompaniesController@edit', $company->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
+                <td><a class="btn btn-primary btn-xs" href="{{action('CompaniesController@edit', $company->id)}}" >Editar</a></td>
                 <td>
                     <form action="{{action('CompaniesController@destroy', $company->id)}}" method="post">
                         {{csrf_field()}}
                         <input name="_method" type="hidden" value="DELETE">
  
-                        <button class="btn btn-danger btn-xs" type="submit"><span class="glyphicon glyphicon-trash"></span></button>
+                        <button class="btn btn-danger btn-xs" type="submit">ELIMINAR</button>
                     </form>
                 </td>
                </tr>
