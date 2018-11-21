@@ -31,13 +31,19 @@
 							<div class="row">
 								<div class="col-xs-6 col-sm-6 col-md-6">
 									<div class="form-group">
-										<input type="text" name="name" id="name" class="form-control input-sm" value="{{$grades->name}}">
+										<select class="form-control" name="name" id="name">
+											<option>Desarrollo de Aplicaciones Multiplataforma</option>
+											<option>Administración de Sistemas Informáticos en Red</option>
+											<option>Mecatrónica</option>
+											<option>Actividades Comerciales</option>
+										</select>
 									</div>
 								</div>
 								<div class="col-xs-6 col-sm-6 col-md-6">
-									<div class="form-group">
-										<input type="text" name="level" id="level" class="form-control input-sm" value="{{$grades->level}}">
-									</div>
+									<select class="form-control" name="level" id="level">
+										<option>Medio</option>
+										<option>Supeior</option>
+									</select>
 								</div>
 							</div>
 							<div class="row">
