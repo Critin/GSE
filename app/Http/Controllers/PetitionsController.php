@@ -12,7 +12,7 @@ class PetitionsController extends Controller
     {
         $petitions = Petitions::all();
 
-        return view('petitions', compact('petitions'));
+        return view('pdf', compact('listados'));
     }
 
     public function pdf()
@@ -23,7 +23,7 @@ class PetitionsController extends Controller
         **/
         $petitions = Petitions::all(); 
 
-        $pdf = PDF::loadView('pdf.petitions', compact('petitions'));
+        $pdf = PDF::loadView('pdf.listados', compact('listados'));
 
         return $pdf->download('listado.pdf');
     }

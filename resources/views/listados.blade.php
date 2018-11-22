@@ -26,7 +26,7 @@
     </table>
     <hr>
     <p>
-        <a href="{{ route('products.pdf') }}" class="btn btn-sm btn-primary">
+        <a href="{{ route('listado.pdf') }}" class="btn btn-sm btn-primary">
             Descargar solicitudes en PDF
         </a>
     </p>
