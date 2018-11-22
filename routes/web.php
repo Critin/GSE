@@ -36,3 +36,7 @@ Route::get('/grades', 'GradesController@index');
 Route::resource('grades', 'GradesController');
 Route::get('/grades/{grades}', 'GradesController@show');
 Route::post('/grades/{grades}', 'GradesController@store');
+
+#Estudios
+//Route::get('/students/{studies}', 'StudiesController@show');
+//Route::resource('/students', 'StudiesController');

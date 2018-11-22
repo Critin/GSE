@@ -9,6 +9,6 @@ class Companies extends Model
     protected $table = 'companies';
 
     protected $fillable = [ 
-        'name', 'city', 'pc',
+        'name', 'city', 'pc'
     ];
 }

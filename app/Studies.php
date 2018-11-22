@@ -7,4 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Studies extends Model
 {
     protected $table = 'studies';
+
+    protected $fillable = [ 
+        'id_student','id_grade'
+    ];
+
+    public function owner(){
+        return $this->belongsTo(Students::class, 'id');
+    }
 }
