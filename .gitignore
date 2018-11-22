@@ -11,3 +11,5 @@ npm-debug.log
 yarn-error.log
 .env
 vendor.zip
+app/Http/Controllers/PetitionsController.php
+app/Http/Controllers/PetitionsController.php
