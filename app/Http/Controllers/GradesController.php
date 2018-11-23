@@ -29,7 +29,8 @@ class GradesController extends Controller
     public function create()
     {
         //
-        return view('Grades.create');
+        $grades = Grades::orderBy('id','DESC')->paginate(10);
+        return view('Grades.create', compact('grades'));
     }
 
     /**

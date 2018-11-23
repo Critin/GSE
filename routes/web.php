@@ -37,6 +37,8 @@ Route::resource('grades', 'GradesController');
 Route::get('/grades/{grades}', 'GradesController@show');
 Route::post('/grades/{grades}', 'GradesController@store');
 
+#Estudios
+
 #PDF
 Route::get('/petitions', 'PetitionsController@index')->name('listados');
 Route::get('descargar-listados', 'PetitionsController@pdf')->name('listado.pdf');

@@ -31,16 +31,18 @@
 							<div class="row">
 								<div class="col-xs-6 col-sm-6 col-md-6">
 									<div class="form-group">
-										<select class="form-control" name="name" id="name">
+										<select class="form-control" name="name" id="name">								
 											<option>Desarrollo de Aplicaciones Multiplataforma</option>
 											<option>Administración de Sistemas Informáticos en Red</option>
 											<option>Mecatrónica</option>
 											<option>Actividades Comerciales</option>
+											<option>Administración y Gestión</option>
 										</select>
 									</div>
 								</div>
 								<div class="col-xs-6 col-sm-6 col-md-6">
 									<select class="form-control" name="level" id="level">
+										<option>Básico</option>
 										<option>Medio</option>
 										<option>Supeior</option>
 									</select>

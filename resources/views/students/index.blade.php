@@ -17,7 +17,6 @@
                <th>Nombre</th>
                <th>Apellido</th>
                <th>Edad</th>
-               <th>Estudios</th>
                <th>Editar</th>
                <th>Eliminar</th>
              </thead>
@@ -28,7 +27,6 @@
                 <td>{{$student->name}}</td>
                 <td>{{$student->lastname}}</td>
                 <td>{{$student->age}}</td>
-                <td>?</td>
                 <td><a class="btn btn-primary btn-xs" href="{{action('StudentsController@edit', $student->id)}}" >Editar</a></td>
                 <td>
                 <form action="{{action('StudentsController@destroy', $student->id)}}" method="post">
