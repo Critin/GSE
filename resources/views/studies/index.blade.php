@@ -18,8 +18,8 @@
               @if($studies->count())  
               @foreach($studies as $study)  
               <tr>
-                <td>{{$study->id_grade}}</td>
-                <td>{{$study->id_student}}</td>
+                <td>{{ __ (":name", ['name' => $study->grades->name]) }}</td>
+                <td>{{ __ (":name", ['name' => $study->owner->name]) }}</td>
                </tr>
                @endforeach 
                @else

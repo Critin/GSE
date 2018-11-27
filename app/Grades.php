@@ -13,6 +13,6 @@ class Grades extends Model
     ];
 
     public function study(){
-        return $this->hasMany(Studies::class, 'id_student');
+        return $this->hasMany(Studies::class);
     }
 }

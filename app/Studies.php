@@ -12,11 +12,11 @@ class Studies extends Model
         'id_student','id_grade'
     ];
 
-    public function owner(){
-        return $this->hasMany(Students::class, 'id');
+    public function grades(){
+        return $this->belongsTo(Grades::class, 'id_grade');
     }
 
-    public function grades(){
-        return $this->belongsTo(Grades::class, 'id');
+    public function owner(){
+        return $this->belongsTo(Students::class, 'id_student');
     }
 }
