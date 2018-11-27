@@ -15,4 +15,8 @@ class Studies extends Model
     public function owner(){
         return $this->belongsTo(Students::class, 'id');
     }
+
+    public function grades(){
+        return $this->belongsTo(Grades::class, 'id');
+    }
 }
