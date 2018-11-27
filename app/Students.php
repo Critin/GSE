@@ -11,4 +11,8 @@ class Students extends Model
     protected $fillable = [ 
         'name', 'lastname', 'age'
     ];
+
+    public function study(){
+        return $this->hasOne(Studies::class);
+    }
 }

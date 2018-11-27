@@ -11,4 +11,8 @@ class Grades extends Model
     protected $fillable = [
         'name', 'level'
     ];
+
+    public function study(){
+        return $this->hasMany(Studies::class);
+    }
 }

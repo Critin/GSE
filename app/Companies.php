@@ -11,4 +11,8 @@ class Companies extends Model
     protected $fillable = [ 
         'name', 'city', 'pc'
     ];
+
+    public function owner(){
+        return $this->hasMany(Students::class, 'id');
+    }
 }

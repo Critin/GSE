@@ -38,6 +38,8 @@ Route::get('/grades/{grades}', 'GradesController@show');
 Route::post('/grades/{grades}', 'GradesController@store');
 
 #Estudios
+Route::get('/studies', 'StudiesController@index');
+Route::resource('studies', 'StudiesController');
 
 #PDF
 Route::get('/petitions', 'PetitionsController@index')->name('listados');
