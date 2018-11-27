@@ -39,10 +39,5 @@
     </table>
     </div>
     <hr>
-    <p>
-        <a href="{{ route('listado.pdf') }}" class="btn btn-sm btn-primary">
-            Descargar solicitudes en PDF
-        </a>
-    </p>
 </section>
 @endsection
