@@ -3,15 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\petitions;
+use App\Petitions;
+use App\Companies;
+use App\Grades;
 
 class ListController extends Controller
 {
     public function index()
     {
-        $petitions = Petitions::all();
+        $listados = Petitions::all();
+        return view('listados.index', compact('petitions','listados'));
+    }
 
-        return view('listados.index', compact('petitions'));
+    public function show($id)
+    {
+        //
+        $listados = Petitions::find($id);
+        return view('petitions.show', compact('petitions','listados'));
     }
 
     public function listadoFecha()

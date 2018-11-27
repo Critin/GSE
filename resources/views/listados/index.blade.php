@@ -26,15 +26,17 @@
             </tr>                            
         </thead>
         <tbody>
-            @foreach($petitions as $petitions)
+            @if($listados->count())
+            @foreach($listados as $petition)
             <tr>
-                <td>{{ $petitions->id }}</td>
-                <td>{{ $petitions->id_company }}</td>
-                <td>{{ $petitions->id_grade }}</td>
-                <td>{{ $petitions->type  }}</td>
-                <td>{{ $petitions->n_students }}</td>
+                <td>{{ $petition->id }}</td>
+                <td>{{ __ (":name", ['name' => $petition->owner->name]) }}</td>
+                <td>{{ __ (":name", ['name' => $petition->grades->name]) }}</td>
+                <td>{{ $petition->type  }}</td>
+                <td>{{ $petition->n_students }}</td>
             </tr>
             @endforeach
+            @endif
         </tbody>
     </table>
     </div>

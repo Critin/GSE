@@ -54,7 +54,7 @@ class PetitionsController extends Controller
         $petitions = Petitions::find($id);
         $petitions = $petition -> owner() -> paginate(10);
 
-        return view('petitions.show', compact('petitions'));
+        return view('petitions.show', compact('petitions','listados'));
     }
 
     /**
