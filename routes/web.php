@@ -31,26 +31,22 @@ Route::resource('students', 'StudentsController');
 Route::get('/students/{students}', 'StudentsController@show');
 Route::post('/students/{students}', 'StudentsController@store');
 
-#Grados
+# Grados
 Route::get('/grades', 'GradesController@index');
 Route::resource('grades', 'GradesController');
 Route::get('/grades/{grades}', 'GradesController@show');
 Route::post('/grades/{grades}', 'GradesController@store');
 
-#Estudios
+# Estudios
 Route::get('/studies', 'StudiesController@index');
 Route::resource('studies', 'StudiesController');
 
-#Peticiones
+# Peticiones
 Route::get('/petitions', 'PetitionsController@index');
 Route::resource('petitions', 'PetitionsController');
 Route::get('/petitions/{petitions}', 'PetitionsController@show');
 Route::post('/petitions/{petitions}', 'PetitionsController@store');
 
-#PDF
-Route::get('/petitions', 'PetitionsController@index')->name('listados');
-Route::get('descargar-listados', 'PetitionsController@pdf')->name('listado.pdf');
-
-#Listados
+# Listados
 Route::get('/listados', 'ListController@index');
 Route::resource('petitions', 'ListController');
