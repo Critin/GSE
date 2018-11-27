@@ -56,7 +56,8 @@ class CompaniesController extends Controller
     {
         //
         $companies = Companies::find($id);
-        return view('companies.show', compact('companies'));
+        $petitions = $company -> owner() -> with(['companies']);
+        return view('companies.show', compact('companies', 'petitions'));
     }
 
     /**

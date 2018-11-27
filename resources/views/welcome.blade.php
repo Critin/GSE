@@ -87,7 +87,7 @@
                     <a href="/GSE/grades">Ciclos de grados formativos</a>
                     <a href="/GSE/students">Alumnos</a>
                     <a href="/GSE/studies">Estudios</a>
-                    <a href="https://laravel-news.com">Solicitudes</a>
+                    <a href="/GSE/petitions">Solicitudes</a>
                     <a href="https://laravel-news.com">Listados</a>
                 </div>
             </div>

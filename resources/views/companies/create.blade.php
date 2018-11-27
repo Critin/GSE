@@ -29,9 +29,15 @@
 							{{ csrf_field() }}
 							<div class="row">
 								<div class="col-xs-6 col-sm-6 col-md-6">
-									<div class="form-group">
-										<input type="text" name="name" id="name" class="form-control input-sm" placeholder="Nombre de la compañía">
-									</div>
+								<select class="form-control" name="name" id="name">
+                                                <option>Electrónicos S.A.</option>
+                                                <option>Developers S.L.</option>
+                                                <option>Inditex</option>
+                                                <option>El Corte Inglés</option>
+                                                <option>Ford</option>
+                                                <option>Cableados</option>
+                                                <option>Hospital Puerta del Mar</option>
+                                            </select>
 								</div>
 								<div class="col-xs-6 col-sm-6 col-md-6">
 									<div class="form-group">

@@ -13,6 +13,6 @@ class Companies extends Model
     ];
 
     public function owner(){
-        return $this->hasMany(Students::class, 'id');
+        return $this->hasMany(Petitions::class);
     }
 }

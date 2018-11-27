@@ -41,6 +41,8 @@ Route::post('/grades/{grades}', 'GradesController@store');
 Route::get('/studies', 'StudiesController@index');
 Route::resource('studies', 'StudiesController');
 
-#PDF
-Route::get('/petitions', 'PetitionsController@index')->name('listados');
-Route::get('descargar-listados', 'PetitionsController@pdf')->name('listado.pdf');
+#Peticiones
+Route::get('/petitions', 'PetitionsController@index');
+Route::resource('petitions', 'PetitionsController');
+Route::get('/petitions/{petitions}', 'PetitionsController@show');
+Route::post('/petitions/{petitions}', 'PetitionsController@store');

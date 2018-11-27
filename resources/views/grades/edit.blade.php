@@ -33,10 +33,12 @@
 									<div class="form-group">
 										<select class="form-control" name="name" id="name">								
 											<option>Desarrollo de Aplicaciones Multiplataforma</option>
-											<option>Administración de Sistemas Informáticos en Red</option>
-											<option>Mecatrónica</option>
-											<option>Actividades Comerciales</option>
 											<option>Administración y Gestión</option>
+											<option>Actividades Comerciales</option>
+											<option>Mecatrónica</option>
+											<option>Administración de Sistemas Informáticos en Red</option>
+											<option>Automoción</option>
+											<option>Electricidad y Electrónica</option>
 										</select>
 									</div>
 								</div>

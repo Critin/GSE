@@ -59,7 +59,8 @@ class GradesController extends Controller
         //
         $grades = Grades::find($id);
         $studies = $grade -> study() -> with(['grades']);
-        return view('grades.show', compact('grades', 'studies'));
+        $petitions = $grade -> grades() -> with(['grades']);
+        return view('grades.show', compact('grades', 'studies', 'petitions'));
     }
 
     /**
