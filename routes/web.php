@@ -49,4 +49,4 @@ Route::post('/petitions/{petitions}', 'PetitionsController@store');
 
 # Listados
 Route::get('/listados', 'ListController@index');
-Route::resource('petitions', 'ListController');
+Route::resource('listados', 'ListController');
