@@ -13,3 +13,4 @@ yarn-error.log
 vendor.zip
 app/Http/Controllers/PetitionsController.php
 app/Http/Controllers/PetitionsController.php
+.env
