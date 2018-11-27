@@ -88,7 +88,7 @@
                     <a href="/GSE/students">Alumnos</a>
                     <a href="/GSE/studies">Estudios</a>
                     <a href="/GSE/petitions">Solicitudes</a>
-                    <a href="https://laravel-news.com">Listados</a>
+                    <a href="/GSE/listados">Listados</a>
                 </div>
             </div>
         </div>

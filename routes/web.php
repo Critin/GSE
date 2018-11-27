@@ -46,3 +46,11 @@ Route::get('/petitions', 'PetitionsController@index');
 Route::resource('petitions', 'PetitionsController');
 Route::get('/petitions/{petitions}', 'PetitionsController@show');
 Route::post('/petitions/{petitions}', 'PetitionsController@store');
+
+#PDF
+Route::get('/petitions', 'PetitionsController@index')->name('listados');
+Route::get('descargar-listados', 'PetitionsController@pdf')->name('listado.pdf');
+
+#Listados
+Route::get('/listados', 'ListController@index');
+Route::resource('petitions', 'ListController');
