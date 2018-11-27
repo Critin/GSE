@@ -1,10 +1,23 @@
-@extends('layout')
-
+@extends('layouts.app')
 @section('content')
-    <h1 class="page-header">Listado de solicitudes</h1>
-    <table class="table table-hover table-striped">
+<section class="content">
+<div class="col-md-8 col-md-offset-2">
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <div class="pull-left">
+            <h3>Listados</h3>
+        </div>
+        <div class="pull-right">
+            <select name="Filtro" id="inputFiltro_id" class="form-control">
+                <option value="">Fecha</option>
+                <option value="">Ciclo</option>
+                <option value="">Tipo</option>
+            </select>
+        </div>
+        <div>
+    <table id="mytable" class="table table-bordred table-striped">
         <thead>
-            <tr>
+            <tr class="table-container">
                 <th>ID</th>
                 <th>ID Compañía</th>
                 <th>ID Grado</th>
@@ -19,15 +32,17 @@
                 <td>{{ $petitions->id_company }}</td>
                 <td>{{ $petitions->id_grade }}</td>
                 <td>{{ $petitions->type  }}</td>
-                <td class="text-right">{{ $petitions->n_students }}</td>
+                <td>{{ $petitions->n_students }}</td>
             </tr>
             @endforeach
         </tbody>
     </table>
+    </div>
     <hr>
     <p>
         <a href="{{ route('listado.pdf') }}" class="btn btn-sm btn-primary">
             Descargar solicitudes en PDF
         </a>
     </p>
+</section>
 @endsection
