@@ -13,6 +13,6 @@ class Students extends Model
     ];
 
     public function study(){
-        return $this->hasOne(Studies::class, 'id_grade');
+        return $this->belongsTo(Studies::class, 'id_grade');
     }
 }

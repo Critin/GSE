@@ -13,7 +13,7 @@ class Studies extends Model
     ];
 
     public function owner(){
-        return $this->belongsTo(Students::class, 'id');
+        return $this->hasMany(Students::class, 'id');
     }
 
     public function grades(){
